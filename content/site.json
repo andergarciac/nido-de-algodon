@@ -1,0 +1,624 @@
+{
+  "brand": {
+    "name": "Nido de Algodón",
+    "tagline": "Edredones · Sábanas · Cortinas",
+    "waNumber": "573013624570",
+    "waDisplay": "301 362 4570",
+    "waMessage": "Hola, vi su página Nido de Algodón y quiero más información 😊"
+  },
+  "banner": "🚚 Domicilio gratis en todo el Valle de Aburrá",
+  "hero": {
+    "eyebrow": "Hecho con cariño en Medellín",
+    "title": "Todo para vestir tu cama y tu ventana.",
+    "sub": "Edredones, juegos de sábanas, cortinas y línea infantil de muy buena calidad, a precios justos — directo de nuestro taller familiar a tu casa, sin intermediarios.",
+    "image": {
+      "url": "/images/uploads/hero.jpg",
+      "alt": "Sábana mandala turquesa — Nido de Algodón"
+    }
+  },
+  "story": {
+    "title": "Un negocio familiar, hecho con amor.",
+    "paragraphs": [
+      "Nido de Algodón nació con las ganas de ofrecer piezas de cama y hogar bonitas, cómodas y de muy buena calidad, sin que tengas que pagar los precios de las grandes tiendas.",
+      "Cada edredón, cada juego de sábanas y cada cortina se escoge pensando en la calidad de la tela y el acabado — porque sabemos que esto va a estar en tu casa todos los días."
+    ],
+    "sign": "— Hecho con cariño, para tu hogar.",
+    "features": [
+      {
+        "title": "5 líneas de producto",
+        "text": "Edredones, sábanas cama doble, juegos de sábanas, cortinas y línea infantil."
+      },
+      {
+        "title": "Entrega rápida",
+        "text": "Domicilio gratis en todo el Valle de Aburrá."
+      },
+      {
+        "title": "Diseños variados",
+        "text": "Decenas de estampados distintos para que encuentres el tuyo."
+      },
+      {
+        "title": "Trato cercano",
+        "text": "Hablas directo con nosotros, sin filas ni vendedores de afán."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "¿Lista o listo para renovar tu cama?",
+    "text": "Cuéntanos qué buscas — color, tamaño o estampado — y te ayudamos a escoger. Respondemos rápido por WhatsApp."
+  },
+  "footer": {
+    "note": "Edredones, sábanas y cortinas de calidad, hechos con cariño para tu hogar. Domicilio gratis en el Valle de Aburrá.",
+    "location": "Medellín, Colombia",
+    "copyright": "© 2026 Nido de Algodón. Todos los derechos reservados."
+  },
+  "categories": [
+    {
+      "id": "edredones",
+      "name": "Edredones",
+      "icon": "bed",
+      "priceLabel": "Desde $70.000",
+      "specs": [
+        "Ajustable 140×190",
+        "Sobresábana 200×230",
+        "2 fundas de almohada"
+      ],
+      "priceGroups": [
+        {
+          "label": "Edredón completo",
+          "price": "$70.000"
+        }
+      ],
+      "items": [
+        {
+          "id": "ed_01.jpg",
+          "url": "/images/uploads/edredones/ed_01.jpg",
+          "label": ""
+        },
+        {
+          "id": "ed_02.jpg",
+          "url": "/images/uploads/edredones/ed_02.jpg",
+          "label": ""
+        },
+        {
+          "id": "ed_03.jpg",
+          "url": "/images/uploads/edredones/ed_03.jpg",
+          "label": ""
+        },
+        {
+          "id": "ed_04.jpg",
+          "url": "/images/uploads/edredones/ed_04.jpg",
+          "label": ""
+        },
+        {
+          "id": "ed_05.jpg",
+          "url": "/images/uploads/edredones/ed_05.jpg",
+          "label": ""
+        },
+        {
+          "id": "ed_06.jpg",
+          "url": "/images/uploads/edredones/ed_06.jpg",
+          "label": ""
+        },
+        {
+          "id": "ed_07.jpg",
+          "url": "/images/uploads/edredones/ed_07.jpg",
+          "label": ""
+        },
+        {
+          "id": "ed_08.jpg",
+          "url": "/images/uploads/edredones/ed_08.jpg",
+          "label": ""
+        },
+        {
+          "id": "ed_09.jpg",
+          "url": "/images/uploads/edredones/ed_09.jpg",
+          "label": ""
+        },
+        {
+          "id": "ed_10.jpg",
+          "url": "/images/uploads/edredones/ed_10.jpg",
+          "label": ""
+        },
+        {
+          "id": "ed_11.jpg",
+          "url": "/images/uploads/edredones/ed_11.jpg",
+          "label": ""
+        },
+        {
+          "id": "ed_12.jpg",
+          "url": "/images/uploads/edredones/ed_12.jpg",
+          "label": ""
+        },
+        {
+          "id": "ed_13.jpg",
+          "url": "/images/uploads/edredones/ed_13.jpg",
+          "label": ""
+        },
+        {
+          "id": "ed_14.jpg",
+          "url": "/images/uploads/edredones/ed_14.jpg",
+          "label": ""
+        },
+        {
+          "id": "ed_15.jpg",
+          "url": "/images/uploads/edredones/ed_15.jpg",
+          "label": ""
+        },
+        {
+          "id": "ed_16.jpg",
+          "url": "/images/uploads/edredones/ed_16.jpg",
+          "label": ""
+        },
+        {
+          "id": "ed_17.jpg",
+          "url": "/images/uploads/edredones/ed_17.jpg",
+          "label": ""
+        },
+        {
+          "id": "ed_18.jpg",
+          "url": "/images/uploads/edredones/ed_18.jpg",
+          "label": ""
+        },
+        {
+          "id": "ed_19.jpg",
+          "url": "/images/uploads/edredones/ed_19.jpg",
+          "label": ""
+        },
+        {
+          "id": "ed_20.jpg",
+          "url": "/images/uploads/edredones/ed_20.jpg",
+          "label": ""
+        },
+        {
+          "id": "ed_21.jpg",
+          "url": "/images/uploads/edredones/ed_21.jpg",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "doble",
+      "name": "Sábanas Cama Doble",
+      "icon": "doble",
+      "priceLabel": "$70.000",
+      "specs": [
+        "Ajustable 190×140×30",
+        "Sobresábana 200×230",
+        "Fundas 50×70"
+      ],
+      "priceGroups": [
+        {
+          "label": "Juego completo",
+          "price": "$70.000"
+        }
+      ],
+      "items": [
+        {
+          "id": "db_01.jpg",
+          "url": "/images/uploads/doble/db_01.jpg",
+          "label": ""
+        },
+        {
+          "id": "db_02.jpg",
+          "url": "/images/uploads/doble/db_02.jpg",
+          "label": ""
+        },
+        {
+          "id": "db_03.jpg",
+          "url": "/images/uploads/doble/db_03.jpg",
+          "label": ""
+        },
+        {
+          "id": "db_04.jpg",
+          "url": "/images/uploads/doble/db_04.jpg",
+          "label": ""
+        },
+        {
+          "id": "db_05.jpg",
+          "url": "/images/uploads/doble/db_05.jpg",
+          "label": ""
+        },
+        {
+          "id": "db_06.jpg",
+          "url": "/images/uploads/doble/db_06.jpg",
+          "label": ""
+        },
+        {
+          "id": "db_07.jpg",
+          "url": "/images/uploads/doble/db_07.jpg",
+          "label": ""
+        },
+        {
+          "id": "db_08.jpg",
+          "url": "/images/uploads/doble/db_08.jpg",
+          "label": ""
+        },
+        {
+          "id": "db_09.jpg",
+          "url": "/images/uploads/doble/db_09.jpg",
+          "label": ""
+        },
+        {
+          "id": "db_10.jpg",
+          "url": "/images/uploads/doble/db_10.jpg",
+          "label": ""
+        },
+        {
+          "id": "db_11.jpg",
+          "url": "/images/uploads/doble/db_11.jpg",
+          "label": ""
+        },
+        {
+          "id": "db_12.jpg",
+          "url": "/images/uploads/doble/db_12.jpg",
+          "label": ""
+        },
+        {
+          "id": "db_13.jpg",
+          "url": "/images/uploads/doble/db_13.jpg",
+          "label": ""
+        },
+        {
+          "id": "db_14.jpg",
+          "url": "/images/uploads/doble/db_14.jpg",
+          "label": ""
+        },
+        {
+          "id": "db_15.jpg",
+          "url": "/images/uploads/doble/db_15.jpg",
+          "label": ""
+        },
+        {
+          "id": "db_16.jpg",
+          "url": "/images/uploads/doble/db_16.jpg",
+          "label": ""
+        },
+        {
+          "id": "db_17.jpg",
+          "url": "/images/uploads/doble/db_17.jpg",
+          "label": ""
+        },
+        {
+          "id": "db_18.jpg",
+          "url": "/images/uploads/doble/db_18.jpg",
+          "label": ""
+        },
+        {
+          "id": "db_19.jpg",
+          "url": "/images/uploads/doble/db_19.jpg",
+          "label": ""
+        },
+        {
+          "id": "db_20.jpg",
+          "url": "/images/uploads/doble/db_20.jpg",
+          "label": ""
+        },
+        {
+          "id": "db_21.jpg",
+          "url": "/images/uploads/doble/db_21.jpg",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "varias",
+      "name": "Juego de Sábanas",
+      "icon": "sheet",
+      "priceLabel": "Desde $60.000",
+      "specs": [
+        "Incluye sábana + fundas"
+      ],
+      "priceGroups": [
+        {
+          "label": "Sencilla · 1 metro",
+          "price": "$60.000"
+        },
+        {
+          "label": "Semidoble 1,20 y Doble",
+          "price": "$70.000"
+        },
+        {
+          "label": "Queen 160 / King 2×2",
+          "price": "$85.000"
+        }
+      ],
+      "items": [
+        {
+          "id": "va_01.jpg",
+          "url": "/images/uploads/varias/va_01.jpg",
+          "label": "Lila con rayas satinadas"
+        },
+        {
+          "id": "va_02.jpg",
+          "url": "/images/uploads/varias/va_02.jpg",
+          "label": "Verde menta con rayas satinadas"
+        },
+        {
+          "id": "va_03.jpg",
+          "url": "/images/uploads/varias/va_03.jpg",
+          "label": "Beige con rayas satinadas"
+        },
+        {
+          "id": "va_04.jpg",
+          "url": "/images/uploads/varias/va_04.jpg",
+          "label": "Vino tinto con rayas satinadas"
+        },
+        {
+          "id": "va_05.jpg",
+          "url": "/images/uploads/varias/va_05.jpg",
+          "label": "Flores azul y rosado"
+        },
+        {
+          "id": "va_06.jpg",
+          "url": "/images/uploads/varias/va_06.jpg",
+          "label": "Flores pastel multicolor"
+        },
+        {
+          "id": "va_07.jpg",
+          "url": "/images/uploads/varias/va_07.jpg",
+          "label": "Rayas azul y blanco"
+        },
+        {
+          "id": "va_08.jpg",
+          "url": "/images/uploads/varias/va_08.jpg",
+          "label": "Mandala turquesa"
+        },
+        {
+          "id": "va_09.jpg",
+          "url": "/images/uploads/varias/va_09.jpg",
+          "label": "Rayas delgadas lila"
+        },
+        {
+          "id": "va_10.jpg",
+          "url": "/images/uploads/varias/va_10.jpg",
+          "label": "Cuadros azul grisáceo"
+        },
+        {
+          "id": "va_11.jpg",
+          "url": "/images/uploads/varias/va_11.jpg",
+          "label": "Gris con rayas satinadas"
+        },
+        {
+          "id": "va_12.jpg",
+          "url": "/images/uploads/varias/va_12.jpg",
+          "label": "Gris con puntos blancos"
+        },
+        {
+          "id": "va_13.jpg",
+          "url": "/images/uploads/varias/va_13.jpg",
+          "label": "Rayas azul marino y blanco"
+        },
+        {
+          "id": "va_14.jpg",
+          "url": "/images/uploads/varias/va_14.jpg",
+          "label": "Azul marino con rayas satinadas"
+        },
+        {
+          "id": "va_15.jpg",
+          "url": "/images/uploads/varias/va_15.jpg",
+          "label": "Rayas diagonales azules"
+        },
+        {
+          "id": "va_16.jpg",
+          "url": "/images/uploads/varias/va_16.jpg",
+          "label": "Rayas pastel multicolor"
+        },
+        {
+          "id": "va_17.jpg",
+          "url": "/images/uploads/varias/va_17.jpg",
+          "label": "Puntos y rayitas blanco"
+        },
+        {
+          "id": "va_18.jpg",
+          "url": "/images/uploads/varias/va_18.jpg",
+          "label": "Mariposas moradas y turquesas"
+        },
+        {
+          "id": "va_19.jpg",
+          "url": "/images/uploads/varias/va_19.jpg",
+          "label": "Flores rosadas y turquesas"
+        },
+        {
+          "id": "va_20.jpg",
+          "url": "/images/uploads/varias/va_20.jpg",
+          "label": "Círculos azules"
+        },
+        {
+          "id": "va_21.jpg",
+          "url": "/images/uploads/varias/va_21.jpg",
+          "label": "Rombos multicolor"
+        },
+        {
+          "id": "va_22.jpg",
+          "url": "/images/uploads/varias/va_22.jpg",
+          "label": "Flores rosa con Torre Eiffel"
+        },
+        {
+          "id": "va_23.jpg",
+          "url": "/images/uploads/varias/va_23.jpg",
+          "label": "Flamencos tropicales"
+        },
+        {
+          "id": "va_24.jpg",
+          "url": "/images/uploads/varias/va_24.jpg",
+          "label": "Círculos blanco y negro"
+        },
+        {
+          "id": "va_25.jpg",
+          "url": "/images/uploads/varias/va_25.jpg",
+          "label": "Flores turquesas"
+        },
+        {
+          "id": "va_26.jpg",
+          "url": "/images/uploads/varias/va_26.jpg",
+          "label": "Puntos verde y amarillo"
+        },
+        {
+          "id": "va_27.jpg",
+          "url": "/images/uploads/varias/va_27.jpg",
+          "label": "Rayas turquesa estilo París"
+        },
+        {
+          "id": "va_28.jpg",
+          "url": "/images/uploads/varias/va_28.jpg",
+          "label": "Círculos rojo y lila"
+        },
+        {
+          "id": "va_29.jpg",
+          "url": "/images/uploads/varias/va_29.jpg",
+          "label": "Ahoy! náutico azul marino"
+        },
+        {
+          "id": "va_30.jpg",
+          "url": "/images/uploads/varias/va_30.jpg",
+          "label": "Cuadros azul eléctrico"
+        },
+        {
+          "id": "va_31.jpg",
+          "url": "/images/uploads/varias/va_31.jpg",
+          "label": "Pretty Girl gris"
+        },
+        {
+          "id": "va_32.jpg",
+          "url": "/images/uploads/varias/va_32.jpg",
+          "label": "Cuadros y círculos azules"
+        },
+        {
+          "id": "va_33.jpg",
+          "url": "/images/uploads/varias/va_33.jpg",
+          "label": "Torre Eiffel y rosas"
+        },
+        {
+          "id": "va_34.jpg",
+          "url": "/images/uploads/varias/va_34.jpg",
+          "label": "Hojas tropicales verdes"
+        },
+        {
+          "id": "va_35.jpg",
+          "url": "/images/uploads/varias/va_35.jpg",
+          "label": "Círculos azul cielo"
+        },
+        {
+          "id": "va_36.jpg",
+          "url": "/images/uploads/varias/va_36.jpg",
+          "label": "Mariposas y coronas rosa"
+        }
+      ]
+    },
+    {
+      "id": "cortinas",
+      "name": "Cortinas",
+      "icon": "curtain",
+      "priceLabel": "$65.000",
+      "specs": [
+        "2 paneles de 1,40 m (280 cm total)",
+        "Largo 210 cm"
+      ],
+      "priceGroups": [
+        {
+          "label": "Juego de 2 paneles",
+          "price": "$65.000"
+        }
+      ],
+      "items": [
+        {
+          "id": "ct_01.jpg",
+          "url": "/images/uploads/cortinas/ct_01.jpg",
+          "label": "Violeta"
+        },
+        {
+          "id": "ct_02.jpg",
+          "url": "/images/uploads/cortinas/ct_02.jpg",
+          "label": "Café"
+        },
+        {
+          "id": "ct_03.jpg",
+          "url": "/images/uploads/cortinas/ct_03.jpg",
+          "label": "Guayaba"
+        },
+        {
+          "id": "ct_04.jpg",
+          "url": "/images/uploads/cortinas/ct_04.jpg",
+          "label": "Azul oscuro"
+        },
+        {
+          "id": "ct_05.jpg",
+          "url": "/images/uploads/cortinas/ct_05.jpg",
+          "label": "Gris oscuro"
+        },
+        {
+          "id": "ct_06.jpg",
+          "url": "/images/uploads/cortinas/ct_06.jpg",
+          "label": "Lila"
+        },
+        {
+          "id": "ct_07.jpg",
+          "url": "/images/uploads/cortinas/ct_07.jpg",
+          "label": "Beige oscuro"
+        },
+        {
+          "id": "ct_08.jpg",
+          "url": "/images/uploads/cortinas/ct_08.jpg",
+          "label": "Naranja claro"
+        },
+        {
+          "id": "ct_09.jpg",
+          "url": "/images/uploads/cortinas/ct_09.jpg",
+          "label": "Gris claro"
+        },
+        {
+          "id": "ct_10.jpg",
+          "url": "/images/uploads/cortinas/ct_10.jpg",
+          "label": "Negro"
+        },
+        {
+          "id": "ct_11.jpg",
+          "url": "/images/uploads/cortinas/ct_11.jpg",
+          "label": "Roja"
+        }
+      ]
+    },
+    {
+      "id": "ninos",
+      "name": "Niños",
+      "icon": "child",
+      "priceLabel": "$70.000",
+      "specs": [
+        "Cama sencilla"
+      ],
+      "priceGroups": [
+        {
+          "label": "Cama sencilla",
+          "price": "$70.000"
+        }
+      ],
+      "items": [
+        {
+          "id": "ni_01.jpg",
+          "url": "/images/uploads/ninos/ni_01.jpg",
+          "label": "Minnie Mouse"
+        },
+        {
+          "id": "ni_02.jpg",
+          "url": "/images/uploads/ninos/ni_02.jpg",
+          "label": "Batman"
+        },
+        {
+          "id": "ni_03.jpg",
+          "url": "/images/uploads/ninos/ni_03.jpg",
+          "label": "Hello Kitty"
+        },
+        {
+          "id": "ni_04.jpg",
+          "url": "/images/uploads/ninos/ni_04.jpg",
+          "label": "Spider-Man"
+        },
+        {
+          "id": "ni_05.jpg",
+          "url": "/images/uploads/ninos/ni_05.jpg",
+          "label": "Mickey Mouse"
+        }
+      ]
+    }
+  ]
+}

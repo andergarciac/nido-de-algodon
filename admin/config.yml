@@ -1,0 +1,108 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: "es"
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+site_url: https://nidodealgodon.netlify.app
+display_url: https://nidodealgodon.netlify.app
+logo_url: /images/uploads/hero.jpg
+
+collections:
+  - name: "general"
+    label: "Información general"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "site"
+        label: "Marca, portada, historia y pie de página"
+        file: "content/site.json"
+        fields:
+          - label: "Marca y contacto"
+            name: "brand"
+            widget: "object"
+            fields:
+              - { label: "Nombre del negocio", name: "name", widget: "string" }
+              - { label: "Frase bajo el nombre", name: "tagline", widget: "string" }
+              - { label: "Número de WhatsApp (sin + ni espacios, ej: 573013624570)", name: "waNumber", widget: "string" }
+              - { label: "Número como se muestra (ej: 301 362 4570)", name: "waDisplay", widget: "string" }
+              - { label: "Mensaje automático de WhatsApp", name: "waMessage", widget: "text" }
+          - label: "Barra superior (domicilio gratis, etc.)"
+            name: "banner"
+            widget: "string"
+          - label: "Portada (hero)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Etiqueta pequeña", name: "eyebrow", widget: "string" }
+              - { label: "Título grande", name: "title", widget: "string" }
+              - { label: "Subtítulo", name: "sub", widget: "text" }
+              - label: "Foto principal"
+                name: "image"
+                widget: "object"
+                fields:
+                  - { label: "Foto", name: "url", widget: "image" }
+                  - { label: "Descripción de la foto (para accesibilidad)", name: "alt", widget: "string", required: false }
+          - label: "Historia del negocio"
+            name: "story"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - label: "Párrafos"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Párrafo", name: "text", widget: "text" }
+              - { label: "Frase de firma", name: "sign", widget: "string" }
+              - label: "Características destacadas"
+                name: "features"
+                widget: "list"
+                fields:
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "string" }
+          - label: "Llamado final a WhatsApp"
+            name: "finalCta"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto", name: "text", widget: "text" }
+          - label: "Pie de página"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Nota corta", name: "note", widget: "text" }
+              - { label: "Ciudad / ubicación", name: "location", widget: "string" }
+              - { label: "Línea de derechos", name: "copyright", widget: "string" }
+          - label: "Categorías de productos"
+            name: "categories"
+            widget: "list"
+            summary: "{{fields.name}} ({{fields.priceLabel}})"
+            fields:
+              - { label: "Identificador interno (no cambiar si ya existe)", name: "id", widget: "string" }
+              - { label: "Nombre de la categoría", name: "name", widget: "string" }
+              - label: "Ícono"
+                name: "icon"
+                widget: "select"
+                options: ["bed", "doble", "sheet", "curtain", "child", "star", "heart"]
+              - { label: "Precio mostrado en el botón (ej: Desde $70.000)", name: "priceLabel", widget: "string" }
+              - label: "Características (medidas, detalles)"
+                name: "specs"
+                widget: "list"
+                field: { label: "Característica", name: "text", widget: "string" }
+              - label: "Precios por tamaño"
+                name: "priceGroups"
+                widget: "list"
+                fields:
+                  - { label: "Tamaño / descripción", name: "label", widget: "string" }
+                  - { label: "Precio", name: "price", widget: "string" }
+              - label: "Fotos de esta categoría"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.label}}"
+                fields:
+                  - { label: "Foto", name: "url", widget: "image" }
+                  - { label: "Nombre del diseño (opcional)", name: "label", widget: "string", required: false }
+                  - { label: "Identificador interno", name: "id", widget: "string", required: false }
