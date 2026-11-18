@@ -298,6 +298,101 @@
           "id": "db_21.jpg",
           "url": "/images/uploads/doble/db_21.jpg",
           "label": ""
+        },
+        {
+          "id": "va_18.jpg",
+          "url": "/images/uploads/varias/va_18.jpg",
+          "label": "Mariposas moradas y turquesas"
+        },
+        {
+          "id": "va_19.jpg",
+          "url": "/images/uploads/varias/va_19.jpg",
+          "label": "Flores rosadas y turquesas"
+        },
+        {
+          "id": "va_20.jpg",
+          "url": "/images/uploads/varias/va_20.jpg",
+          "label": "Círculos azules"
+        },
+        {
+          "id": "va_21.jpg",
+          "url": "/images/uploads/varias/va_21.jpg",
+          "label": "Rombos multicolor"
+        },
+        {
+          "id": "va_22.jpg",
+          "url": "/images/uploads/varias/va_22.jpg",
+          "label": "Flores rosa con Torre Eiffel"
+        },
+        {
+          "id": "va_23.jpg",
+          "url": "/images/uploads/varias/va_23.jpg",
+          "label": "Flamencos tropicales"
+        },
+        {
+          "id": "va_24.jpg",
+          "url": "/images/uploads/varias/va_24.jpg",
+          "label": "Círculos blanco y negro"
+        },
+        {
+          "id": "va_25.jpg",
+          "url": "/images/uploads/varias/va_25.jpg",
+          "label": "Flores turquesas"
+        },
+        {
+          "id": "va_26.jpg",
+          "url": "/images/uploads/varias/va_26.jpg",
+          "label": "Puntos verde y amarillo"
+        },
+        {
+          "id": "va_27.jpg",
+          "url": "/images/uploads/varias/va_27.jpg",
+          "label": "Rayas turquesa estilo París"
+        },
+        {
+          "id": "va_28.jpg",
+          "url": "/images/uploads/varias/va_28.jpg",
+          "label": "Círculos rojo y lila"
+        },
+        {
+          "id": "va_29.jpg",
+          "url": "/images/uploads/varias/va_29.jpg",
+          "label": "Ahoy! náutico azul marino"
+        },
+        {
+          "id": "va_30.jpg",
+          "url": "/images/uploads/varias/va_30.jpg",
+          "label": "Cuadros azul eléctrico"
+        },
+        {
+          "id": "va_31.jpg",
+          "url": "/images/uploads/varias/va_31.jpg",
+          "label": "Pretty Girl gris"
+        },
+        {
+          "id": "va_32.jpg",
+          "url": "/images/uploads/varias/va_32.jpg",
+          "label": "Cuadros y círculos azules"
+        },
+        {
+          "id": "va_33.jpg",
+          "url": "/images/uploads/varias/va_33.jpg",
+          "label": "Torre Eiffel y rosas"
+        },
+        {
+          "id": "va_34.jpg",
+          "url": "/images/uploads/varias/va_34.jpg",
+          "label": "Hojas tropicales verdes"
+        },
+        {
+          "id": "va_35.jpg",
+          "url": "/images/uploads/varias/va_35.jpg",
+          "label": "Círculos azul cielo"
+        },
+        {
+          "id": "va_36.jpg",
+          "url": "/images/uploads/varias/va_36.jpg",
+          "label": "Mariposas y coronas rosa"
         }
       ],
       "active": true
@@ -409,101 +504,6 @@
           "id": "va_17.jpg",
           "url": "/images/uploads/varias/va_17.jpg",
           "label": "Puntos y rayitas blanco"
-        },
-        {
-          "id": "va_18.jpg",
-          "url": "/images/uploads/varias/va_18.jpg",
-          "label": "Mariposas moradas y turquesas"
-        },
-        {
-          "id": "va_19.jpg",
-          "url": "/images/uploads/varias/va_19.jpg",
-          "label": "Flores rosadas y turquesas"
-        },
-        {
-          "id": "va_20.jpg",
-          "url": "/images/uploads/varias/va_20.jpg",
-          "label": "Círculos azules"
-        },
-        {
-          "id": "va_21.jpg",
-          "url": "/images/uploads/varias/va_21.jpg",
-          "label": "Rombos multicolor"
-        },
-        {
-          "id": "va_22.jpg",
-          "url": "/images/uploads/varias/va_22.jpg",
-          "label": "Flores rosa con Torre Eiffel"
-        },
-        {
-          "id": "va_23.jpg",
-          "url": "/images/uploads/varias/va_23.jpg",
-          "label": "Flamencos tropicales"
-        },
-        {
-          "id": "va_24.jpg",
-          "url": "/images/uploads/varias/va_24.jpg",
-          "label": "Círculos blanco y negro"
-        },
-        {
-          "id": "va_25.jpg",
-          "url": "/images/uploads/varias/va_25.jpg",
-          "label": "Flores turquesas"
-        },
-        {
-          "id": "va_26.jpg",
-          "url": "/images/uploads/varias/va_26.jpg",
-          "label": "Puntos verde y amarillo"
-        },
-        {
-          "id": "va_27.jpg",
-          "url": "/images/uploads/varias/va_27.jpg",
-          "label": "Rayas turquesa estilo París"
-        },
-        {
-          "id": "va_28.jpg",
-          "url": "/images/uploads/varias/va_28.jpg",
-          "label": "Círculos rojo y lila"
-        },
-        {
-          "id": "va_29.jpg",
-          "url": "/images/uploads/varias/va_29.jpg",
-          "label": "Ahoy! náutico azul marino"
-        },
-        {
-          "id": "va_30.jpg",
-          "url": "/images/uploads/varias/va_30.jpg",
-          "label": "Cuadros azul eléctrico"
-        },
-        {
-          "id": "va_31.jpg",
-          "url": "/images/uploads/varias/va_31.jpg",
-          "label": "Pretty Girl gris"
-        },
-        {
-          "id": "va_32.jpg",
-          "url": "/images/uploads/varias/va_32.jpg",
-          "label": "Cuadros y círculos azules"
-        },
-        {
-          "id": "va_33.jpg",
-          "url": "/images/uploads/varias/va_33.jpg",
-          "label": "Torre Eiffel y rosas"
-        },
-        {
-          "id": "va_34.jpg",
-          "url": "/images/uploads/varias/va_34.jpg",
-          "label": "Hojas tropicales verdes"
-        },
-        {
-          "id": "va_35.jpg",
-          "url": "/images/uploads/varias/va_35.jpg",
-          "label": "Círculos azul cielo"
-        },
-        {
-          "id": "va_36.jpg",
-          "url": "/images/uploads/varias/va_36.jpg",
-          "label": "Mariposas y coronas rosa"
         }
       ],
       "active": false
