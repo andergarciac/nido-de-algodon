@@ -1,7 +1,7 @@
 {
   "brand": {
     "name": "Nido de Algodón",
-    "tagline": "Edredones · Sábanas · Cortinas",
+    "tagline": "Sábanas · Línea Infantil",
     "waNumber": "573013624570",
     "waDisplay": "301 362 4570",
     "waMessage": "Hola, vi su página Nido de Algodón y quiero más información 😊"
@@ -10,7 +10,7 @@
   "hero": {
     "eyebrow": "Hecho con cariño en Medellín",
     "title": "Todo para vestir tu cama y tu ventana.",
-    "sub": "Edredones, juegos de sábanas, cortinas y línea infantil de muy buena calidad, a precios justos — directo de nuestro taller familiar a tu casa, sin intermediarios.",
+    "sub": "Sábanas cama doble y línea infantil de muy buena calidad, a precios justos — directo de nuestro taller familiar a tu casa, sin intermediarios.",
     "image": {
       "url": "/images/uploads/hero.jpg",
       "alt": "Sábana mandala turquesa — Nido de Algodón"
@@ -20,13 +20,13 @@
     "title": "Un negocio familiar, hecho con amor.",
     "paragraphs": [
       "Nido de Algodón nació con las ganas de ofrecer piezas de cama y hogar bonitas, cómodas y de muy buena calidad, sin que tengas que pagar los precios de las grandes tiendas.",
-      "Cada edredón, cada juego de sábanas y cada cortina se escoge pensando en la calidad de la tela y el acabado — porque sabemos que esto va a estar en tu casa todos los días."
+      "Cada juego de sábanas y cada diseño infantil se escoge pensando en la calidad de la tela y el acabado — porque sabemos que esto va a estar en tu casa todos los días."
     ],
     "sign": "— Hecho con cariño, para tu hogar.",
     "features": [
       {
-        "title": "5 líneas de producto",
-        "text": "Edredones, sábanas cama doble, juegos de sábanas, cortinas y línea infantil."
+        "title": "2 líneas de producto",
+        "text": "Sábanas cama doble y línea infantil."
       },
       {
         "title": "Entrega rápida",
@@ -47,7 +47,7 @@
     "text": "Cuéntanos qué buscas — color, tamaño o estampado — y te ayudamos a escoger. Respondemos rápido por WhatsApp."
   },
   "footer": {
-    "note": "Edredones, sábanas y cortinas de calidad, hechos con cariño para tu hogar. Domicilio gratis en el Valle de Aburrá.",
+    "note": "Sábanas y línea infantil de calidad, hechos con cariño para tu hogar. Domicilio gratis en el Valle de Aburrá.",
     "location": "Medellín, Colombia",
     "copyright": "© 2026 Nido de Algodón. Todos los derechos reservados."
   },
