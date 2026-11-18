@@ -170,6 +170,14 @@ footer a:hover{opacity:1;}
 (function(){
 "use strict";
 
+/* Los enlaces de invitación/recuperación de contraseña de Netlify Identity
+   llegan a la raíz del sitio (aquí) con un token en el hash. El widget que
+   sabe procesarlos vive en /admin, así que lo redirigimos preservando el hash. */
+if(/^#(confirmation_token|invite_token|recovery_token|email_change_token)=/.test(location.hash)){
+  location.replace("/admin/" + location.hash);
+  return;
+}
+
 var ICONS = {
   bed: '<path d="M3 10c0-2 1.5-4 5-4h8c3.5 0 5 2 5 4v8H3v-8z"/><path d="M3 14h18M8 14v4M16 14v4"/>',
   doble: '<path d="M2 18v-5a2 2 0 012-2h16a2 2 0 012 2v5"/><path d="M4 11V8a2 2 0 012-2h3a2 2 0 012 2v3M13 11V8a2 2 0 012-2h3a2 2 0 012 2v3M2 18h20v2H2z"/>',
