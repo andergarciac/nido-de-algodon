@@ -174,7 +174,8 @@
           "url": "/images/uploads/edredones/ed_21.jpg",
           "label": ""
         }
-      ]
+      ],
+      "active": false
     },
     {
       "id": "doble",
@@ -298,7 +299,8 @@
           "url": "/images/uploads/doble/db_21.jpg",
           "label": ""
         }
-      ]
+      ],
+      "active": true
     },
     {
       "id": "varias",
@@ -503,7 +505,8 @@
           "url": "/images/uploads/varias/va_36.jpg",
           "label": "Mariposas y coronas rosa"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "id": "cortinas",
@@ -576,7 +579,8 @@
           "url": "/images/uploads/cortinas/ct_11.jpg",
           "label": "Roja"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "id": "ninos",
@@ -618,7 +622,8 @@
           "url": "/images/uploads/ninos/ni_05.jpg",
           "label": "Mickey Mouse"
         }
-      ]
+      ],
+      "active": true
     }
   ]
 }

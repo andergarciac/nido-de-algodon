@@ -77,6 +77,9 @@ button,input,select,textarea{font-family:inherit;}
 .cat-thumb img{width:100%;height:100%;object-fit:cover;}
 .cat-thumb svg{width:34px;height:34px;}
 .cat-count{position:absolute;top:8px;right:8px;background:rgba(43,36,32,.72);color:#fff;font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;}
+.cat-card-off{opacity:.55;}
+.cat-card-off .cat-thumb img{filter:grayscale(.6);}
+.cat-hidden-badge{position:absolute;bottom:8px;left:8px;background:var(--danger);color:#fff;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;}
 .cat-body{padding:14px;flex:1;display:flex;flex-direction:column;gap:3px;}
 .cat-body b{font-family:'Fraunces',serif;font-size:17px;}
 .cat-body .price{color:var(--accent);font-weight:600;font-size:14px;}
@@ -369,10 +372,12 @@ function renderCategorias(){
   html += '<div class="cat-grid">';
   state.categories.forEach(function(c){
     var firstPhoto = (c.items && c.items[0]) ? c.items[0].url : null;
-    html += '<div class="cat-card">'+
+    var isActive = c.active !== false;
+    html += '<div class="cat-card'+(isActive?'':' cat-card-off')+'">'+
       '<button class="cat-thumb" data-open-cat="'+esc(c.id)+'" style="border:none;width:100%;cursor:pointer;padding:0;">'+
         (firstPhoto ? '<img src="'+esc(firstPhoto)+'" alt="">' : iconSvg(c.icon)) +
         '<span class="cat-count">'+(c.items?c.items.length:0)+' foto'+((c.items&&c.items.length===1)?'':'s')+'</span>'+
+        (isActive?'':'<span class="cat-hidden-badge">Oculta</span>')+
       '</button>'+
       '<div class="cat-body">'+
         '<b>'+esc(c.name)+'</b>'+
@@ -380,6 +385,7 @@ function renderCategorias(){
       '</div>'+
       '<div class="cat-actions">'+
         '<button class="btn btn-wine btn-sm" style="flex:1" data-open-cat="'+esc(c.id)+'">Editar</button>'+
+        '<button class="btn btn-sm '+(isActive?'btn-ghost':'btn-outline')+'" data-toggle-active="'+esc(c.id)+'" title="'+(isActive?'Ocultar del sitio':'Mostrar en el sitio')+'">'+(isActive?'Ocultar':'Mostrar')+'</button>'+
       '</div>'+
     '</div>';
   });
@@ -396,10 +402,13 @@ function renderCategoryEditor(){
   if(!Array.isArray(cat.priceGroups)) cat.priceGroups = [];
   if(!Array.isArray(cat.items)) cat.items = [];
 
+  var isActive = cat.active !== false;
   var html = '<div class="editor-head">'+
     '<button class="icon-btn" id="btnBackCats">'+BACK_ICON+'</button>'+
     '<h2 class="serif">'+esc(cat.name||'Categoría')+'</h2>'+
-  '</div>';
+    '<button class="btn btn-sm '+(isActive?'btn-ghost':'btn-outline')+'" id="btnToggleActive" style="margin-left:auto">'+(isActive?'Ocultar del sitio':'Mostrar en el sitio')+'</button>'+
+  '</div>'+
+  (isActive?'':'<p class="subhead-hint" style="color:var(--danger);margin:4px 0 0">Esta categoría está oculta: no aparece en el sitio público.</p>');
 
   html += '<div class="card section">'+
     '<div class="row2">'+
@@ -558,6 +567,16 @@ function wireEvents(){
     Array.prototype.forEach.call(document.querySelectorAll('[data-open-cat]'), function(el){
       el.onclick = function(){ editingCatId = el.getAttribute('data-open-cat'); render(); };
     });
+    Array.prototype.forEach.call(document.querySelectorAll('[data-toggle-active]'), function(el){
+      el.onclick = function(e){
+        e.stopPropagation();
+        var id = el.getAttribute('data-toggle-active');
+        var c = state.categories.filter(function(x){ return x.id===id; })[0];
+        if(!c) return;
+        c.active = (c.active === false) ? true : false;
+        saveSite((c.active?'Muestra':'Oculta')+' categoría: '+c.name).then(function(){ render(); });
+      };
+    });
     var btnNewCat = document.getElementById('btnNewCat');
     if(btnNewCat) btnNewCat.onclick = function(){
       var name = prompt('Nombre de la nueva categoría (ej: Cobijas):');
@@ -578,6 +597,10 @@ function wireEvents(){
 
   document.getElementById('btnBackCats').onclick = function(){ editingCatId = null; render(); };
   document.getElementById('btnCancelCat').onclick = function(){ editingCatId = null; loadSite().then(render); };
+  document.getElementById('btnToggleActive').onclick = function(){
+    cat.active = (cat.active === false) ? true : false;
+    saveSite((cat.active?'Muestra':'Oculta')+' categoría: '+cat.name).then(function(){ render(); });
+  };
 
   document.getElementById('fName').oninput = function(e){ cat.name = e.target.value; };
   document.getElementById('fPrice').oninput = function(e){ cat.priceLabel = e.target.value; };
