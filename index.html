@@ -125,6 +125,23 @@ h1.hero-title{font-size:clamp(30px,5vw,48px);font-weight:600;line-height:1.1;let
 .card:hover .card-img img{transform:scale(1.07);}
 .card-cap{padding:9px 11px;display:flex;align-items:center;justify-content:space-between;gap:6px;min-width:0;}
 .card-label{font-size:11.5px;font-weight:600;line-height:1.3;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
+.card{cursor:zoom-in;}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(43,36,32,.72);display:flex;align-items:center;justify-content:center;padding:16px;animation:fadeIn .2s ease both;}
+.lb-box{position:relative;background:var(--surface);border-radius:20px;max-width:960px;width:100%;max-height:calc(100vh - 32px);overflow:auto;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);box-shadow:0 24px 60px rgba(0,0,0,.35);}
+.lb-img{background:var(--surface-2);display:flex;align-items:center;justify-content:center;min-height:240px;}
+.lb-img img{width:100%;height:100%;max-height:calc(100vh - 32px);object-fit:contain;display:block;}
+.lb-info{padding:26px 24px;display:flex;flex-direction:column;gap:12px;}
+.lb-info h3{font-family:'Fraunces',serif;font-size:22px;margin:0;color:var(--fg);}
+.lb-desc{font-size:14.5px;line-height:1.65;color:var(--fg);margin:0;white-space:pre-line;}
+.lb-specs{display:flex;flex-wrap:wrap;gap:6px;}
+.lb-price{display:flex;flex-wrap:wrap;gap:8px;}
+.lb-close,.lb-nav{position:absolute;border:none;background:rgba(255,255,255,.92);color:var(--fg);width:40px;height:40px;border-radius:50%;font-size:22px;line-height:1;cursor:pointer;box-shadow:var(--shadow-sm);}
+.lb-close{top:10px;right:10px;z-index:2;}
+.lb-nav{top:calc(50% - 20px);z-index:2;}
+.lb-prev{left:10px;}.lb-next{left:calc(55.5% - 50px);}
+.lb-count{font-size:12px;color:var(--muted);}
+@media(max-width:720px){.lb{align-items:flex-end;padding:0;}.lb-box{grid-template-columns:1fr;border-radius:20px 20px 0 0;max-height:94vh;}.lb-img img{max-height:52vh;}.lb-next{left:auto;right:10px;}.lb-nav{top:calc(26vh - 20px);}.lb-info{padding:18px 18px 22px;}}
 .cat-panel{animation:fadeIn .35s ease both;}
 
 .final-cta{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--accent),var(--accent-dark));color:#fff;border-radius:26px;padding:46px 28px;text-align:center;margin:16px 0 64px;}
@@ -250,7 +267,7 @@ function render(){
       }).join('')+'</div>';
       html += '<div class="grid">'+cat.items.map(function(it,i){
         var delay = Math.min(i,11)*0.04;
-        return '<figure class="card" style="animation-delay:'+delay+'s"><div class="card-img"><img src="'+esc(it.url)+'" loading="lazy" alt="'+esc(it.label||cat.name)+'"></div>'+
+        return '<figure class="card" data-open="'+i+'" tabindex="0" role="button" aria-label="Ver '+esc(it.label||cat.name)+' en grande" style="animation-delay:'+delay+'s"><div class="card-img"><img src="'+esc(it.url)+'" loading="lazy" alt="'+esc(it.label||cat.name)+'"></div>'+
           (it.label?('<div class="card-cap"><span class="card-label">'+esc(it.label)+'</span></div>'):'')+
           '</figure>';
       }).join('')+'</div></div>';
@@ -274,7 +291,7 @@ document.addEventListener("click", function(e){
   var el = e.target.closest("[data-cat]");
   if(el){
     e.preventDefault();
-    activeCat = el.getAttribute("data-cat");
+    closeLb(); activeCat = el.getAttribute("data-cat");
     render();
     document.getElementById("productos").scrollIntoView({behavior:"smooth", block:"start"});
     return;
@@ -284,6 +301,47 @@ document.addEventListener("click", function(e){
     e.preventDefault();
     document.getElementById("productos").scrollIntoView({behavior:"smooth", block:"start"});
   }
+});
+
+var lbIdx = -1;
+function lbCat(){ return state && state.categories.filter(function(c){return c.active!==false && c.id===activeCat;})[0]; }
+function closeLb(){ var o=document.getElementById("lb"); if(o) o.remove(); document.body.style.overflow=""; lbIdx=-1; }
+function openLb(i){
+  var cat = lbCat(); if(!cat) return;
+  var n = cat.items.length; lbIdx = (i+n)%n;
+  var it = cat.items[lbIdx];
+  var title = it.label || cat.name;
+  var desc = it.desc || "";
+  var msg = "Hola, me interesa: "+cat.name+(it.label?(" – "+it.label):"")+".";
+  var h = '<div class="lb-box" role="dialog" aria-modal="true" aria-label="'+esc(title)+'">'+
+    '<button class="lb-close" type="button" data-lb="close" aria-label="Cerrar">&times;</button>'+
+    (n>1?'<button class="lb-nav lb-prev" type="button" data-lb="prev" aria-label="Anterior">&#8249;</button><button class="lb-nav lb-next" type="button" data-lb="next" aria-label="Siguiente">&#8250;</button>':'')+
+    '<div class="lb-img"><img src="'+esc(it.url)+'" alt="'+esc(title)+'"></div>'+
+    '<div class="lb-info"><span class="lb-count">'+cat.name+' · '+(lbIdx+1)+' de '+n+'</span><h3>'+esc(title)+'</h3>'+
+    (desc?'<p class="lb-desc">'+esc(desc)+'</p>':'')+
+    '<div class="lb-specs">'+cat.specs.map(function(s){return '<span class="spec-pill">'+esc(s)+'</span>';}).join('')+'</div>'+
+    '<div class="lb-price">'+cat.priceGroups.map(function(pg){return '<div class="price-group"><div class="pg-size">'+esc(pg.label)+'</div><div class="pg-price">'+esc(pg.price)+'</div></div>';}).join('')+'</div>'+
+    '<a class="btn btn-wa" target="_blank" rel="noopener" href="'+waLink(state.brand.waNumber, msg)+'">'+WA_ICON+' Preguntar por este</a></div></div>';
+  var o = document.getElementById("lb");
+  if(!o){ o=document.createElement("div"); o.id="lb"; o.className="lb"; document.body.appendChild(o); document.body.style.overflow="hidden"; }
+  o.innerHTML = h;
+  var c=o.querySelector(".lb-close"); if(c) c.focus();
+}
+document.addEventListener("keydown", function(e){
+  if(lbIdx>=0){
+    if(e.key==="Escape") closeLb();
+    else if(e.key==="ArrowRight") openLb(lbIdx+1);
+    else if(e.key==="ArrowLeft") openLb(lbIdx-1);
+    return;
+  }
+  if((e.key==="Enter"||e.key===" ") && e.target.matches && e.target.matches("[data-open]")){ e.preventDefault(); openLb(+e.target.getAttribute("data-open")); }
+});
+document.addEventListener("click", function(e){
+  var lb = e.target.closest("[data-lb]");
+  if(lb){ var a=lb.getAttribute("data-lb"); if(a==="close") closeLb(); else openLb(lbIdx+(a==="next"?1:-1)); return; }
+  if(e.target.id==="lb"){ closeLb(); return; }
+  var op = e.target.closest("[data-open]");
+  if(op){ openLb(+op.getAttribute("data-open")); }
 });
 
 fetch("/content/site.json", {cache:"no-store"})

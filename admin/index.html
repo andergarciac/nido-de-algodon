@@ -121,6 +121,8 @@ button,input,select,textarea{font-family:inherit;}
 .photo-remove{position:absolute;top:6px;right:6px;width:28px;height:28px;border-radius:50%;background:rgba(43,36,32,.75);color:#fff;border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;}
 .photo-remove:hover{background:var(--danger);}
 .photo-card input{width:100%;border:none;border-top:1px solid var(--line);padding:9px 10px;font-size:13px;background:transparent;color:var(--fg);}
+.photo-card textarea{width:100%;border:none;border-top:1px solid var(--line);padding:9px 10px;font-size:13px;background:transparent;color:var(--fg);font-family:inherit;resize:vertical;min-height:64px;}
+.photo-card textarea:focus{outline:none;background:var(--surface-2);}
 .photo-card input:focus{outline:none;background:var(--surface-2);}
 .add-photo-card{aspect-ratio:1;border:2px dashed var(--line);border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--muted);cursor:pointer;font-weight:600;font-size:13px;text-align:center;padding:8px;}
 .add-photo-card:hover{border-color:var(--accent);color:var(--accent);}
@@ -424,12 +426,13 @@ function renderCategoryEditor(){
 
   html += '<div class="card section">'+
     '<div class="subhead">Fotos de esta categoría</div>'+
-    '<p class="subhead-hint">Agrega las fotos de los diseños disponibles. El nombre es opcional (ej: "Estampado flores").</p>'+
+    '<p class="subhead-hint">Agrega las fotos de los diseños disponibles. El nombre y la reseña son opcionales: al tocar una foto en el sitio se ve en grande con su reseña debajo o al lado.</p>'+
     '<div class="photo-grid">';
   cat.items.forEach(function(it, i){
     html += '<div class="photo-card">'+
       '<div class="photo-img"><img src="'+esc(it.url)+'" alt=""><button class="photo-remove" data-rm-photo="'+i+'" type="button">'+X_ICON+'</button></div>'+
       '<input type="text" placeholder="Nombre del diseño (opcional)" value="'+esc(it.label||'')+'" data-photo-label="'+i+'">'+
+      '<textarea placeholder="Reseña o descripción (se ve al tocar la foto)" data-photo-desc="'+i+'">'+esc(it.desc||'')+'</textarea>'+
     '</div>';
   });
   html += '<label class="add-photo-card'+(uploadingPhoto?' uploading':'')+'">'+(uploadingPhoto?'<span class="spinner" style="border-color:rgba(43,36,32,.25);border-top-color:var(--fg);"></span><span>Subiendo…</span>':CAMERA_ICON+'<span>Agregar foto</span>')+
@@ -609,6 +612,9 @@ function wireEvents(){
     el.onclick = function(){ cat.icon = el.getAttribute('data-icon'); render(); };
   });
 
+  Array.prototype.forEach.call(document.querySelectorAll('[data-photo-desc]'), function(el){
+    el.oninput = function(){ cat.items[+el.getAttribute('data-photo-desc')].desc = el.value; };
+  });
   Array.prototype.forEach.call(document.querySelectorAll('[data-photo-label]'), function(el){
     el.oninput = function(){ cat.items[+el.getAttribute('data-photo-label')].label = el.value; };
   });
